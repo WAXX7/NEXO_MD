@@ -1,6 +1,6 @@
 const config = require('../config')
 const {eypz , commands} = require('../command')
-cmd({
+eypz({
     pattern: "menu",
     use: ".menu",
     desc: "menu the bot",
