@@ -34,7 +34,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 8000;
 
-const evalPlugin = require('./lib/AmeenInt_Auth/evalPlugin');
+/*const evalPlugin = require('./lib/AmeenInt_Auth/evalPlugin');*/
 
 async function connectToWA() {
     console.log("Connecting Octa...");
