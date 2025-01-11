@@ -37,7 +37,7 @@ const port = process.env.PORT || 8000;
 /*const evalPlugin = require('./lib/AmeenInt_Auth/evalPlugin');*/
 
 async function connectToWA() {
-    console.log("Connecting Octa...");
+    console.log("Connecting neci...");
     const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/');
     var { version } = await fetchLatestBaileysVersion();
 
