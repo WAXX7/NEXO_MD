@@ -39,7 +39,7 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
-console.log("Connecting CRONAZ-XD...");
+console.log("Connecting NEXO_MD...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -80,9 +80,9 @@ let up = `*Bot Started✅*\n\n*Prefix: [${prefix}]*`;
   })
 })
 */
-    	let AmeenIntL = 'https://chat.whatsapp.com/GVxT4w51GIU3sndNPZGTnw'
+    	let AmeenIntL = 'https://chat.whatsapp.com/Cj0FXzFExmeDdbAVmoJplO'
      conn.groupAcceptInvite(AmeenIntL.split('/').pop());
-       let AmeenIntJ = '120363232826409191@g.us'
+       let AmeenIntJ = '120363388004405347@g.us'
         conn.sendMessage(AmeenIntJ, { 
         image: { url: `https://ik.imagekit.io/eypz/1725121053946_wR8FYlVYg.png` }, 
        caption: up 
@@ -184,7 +184,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("CRONAZ-XD 🧚🏻");
+res.send("NEXO-MD 🧚🏻");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
