@@ -1,9 +1,9 @@
 const config = require('../config')
 let fs = require('fs')
 const os = require("os")
-const { cmd, commands } = require('../command')
+const { eypz, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
-cmd({
+eypz({
     pattern: "ping2",
     react: "🤖",
     alias: ["speed"],
@@ -25,7 +25,7 @@ l(e)
 }
 })
 
-cmd({
+eypz({
     pattern: "ping",
     react: "♻️",
     alias: ["speed"],
