@@ -178,7 +178,7 @@ async function connectToWA() {
         const groupName = metadata.subject;
         for (let participant of participants) {
             const number = participant.split('@')[0];
-            const pushname = await conn.getContact(number).then(contact => contact.pushname || 'Unknown');
+            /*const pushname = await conn.getContact(number).then(contact => contact.pushname || 'Unknown');*/
             const text = `*${pushname}* has ${action === 'add' ? 'joined' : 'left'} the group *${groupName}*`;
             conn.sendMessage(id, { text }, { quoted: { key: { remoteJid: id, fromMe: false }, message: { conversation: text } } });
         }
