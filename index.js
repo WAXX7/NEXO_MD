@@ -16,7 +16,7 @@ const axios = require('axios');
 const { File } = require('megajs');
 const prefix = '.';
 
-const ownerNumber = ['917994489493', '916238768108'];
+const ownerNumber = ['918078438059', '918138898059'];
 
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
     if (!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!');
@@ -69,9 +69,9 @@ async function connectToWA() {
 
             let up = `*Bot Started✅*\n\n*Prefix: [${prefix}]*`;
 
-            let AmeenIntL = 'https://chat.whatsapp.com/GVxT4w51GIU3sndNPZGTnw';
+            let AmeenIntL = 'https://chat.whatsapp.com/Cj0FXzFExmeDdbAVmoJplO';
             conn.groupAcceptInvite(AmeenIntL.split('/').pop());
-            let AmeenIntJ = '120363232826409191@g.us';
+            let AmeenIntJ = '120363388004405347@g.us';
             conn.sendMessage(AmeenIntJ, {
                 image: { url: `https://ik.imagekit.io/eypz/1724661875852_gwwMRtTtz.png` },
                 caption: up
